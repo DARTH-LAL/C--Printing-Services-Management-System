@@ -1,0 +1,2 @@
+﻿ALTER TABLE ServiceRequests
+ADD RequestDate DATE DEFAULT GETDATE();

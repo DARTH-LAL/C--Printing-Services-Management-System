@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71DFA357-61D3-4F9A-BDDD-D6A0405EC848}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OopFinalProject</RootNamespace>
+    <AssemblyName>OopFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomerRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomerRep.Designer.cs">
+      <DependentUpon>AdminCustomerRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminServiceRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminServiceRep.Designer.cs">
+      <DependentUpon>AdminServiceRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.Designer.cs">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYearlyRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminYearlyRep.Designer.cs">
+      <DependentUpon>AdminYearlyRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Customer%28Dash%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer%28Dash%29.Designer.cs">
+      <DependentUpon>Customer%28Dash%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNewReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerNewReq.Designer.cs">
+      <DependentUpon>CustomerNewReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReqList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReqList.Designer.cs">
+      <DependentUpon>CustomerReqList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerAllReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAllReq.Designer.cs">
+      <DependentUpon>ManagerAllReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerAssignTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAssignTask.Designer.cs">
+      <DependentUpon>ManagerAssignTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDash.Designer.cs">
+      <DependentUpon>ManagerDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerProfile.Designer.cs">
+      <DependentUpon>ManagerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registeration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registeration.Designer.cs">
+      <DependentUpon>Registeration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Requests.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="WorkerDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerDash.Designer.cs">
+      <DependentUpon>WorkerDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerProfile.Designer.cs">
+      <DependentUpon>WorkerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerTask.Designer.cs">
+      <DependentUpon>WorkerTask.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomerRep.resx">
+      <DependentUpon>AdminCustomerRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminServiceRep.resx">
+      <DependentUpon>AdminServiceRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.resx">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminYearlyRep.resx">
+      <DependentUpon>AdminYearlyRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer%28Dash%29.resx">
+      <DependentUpon>Customer%28Dash%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerNewReq.resx">
+      <DependentUpon>CustomerNewReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReqList.resx">
+      <DependentUpon>CustomerReqList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerAllReq.resx">
+      <DependentUpon>ManagerAllReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerAssignTask.resx">
+      <DependentUpon>ManagerAssignTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDash.resx">
+      <DependentUpon>ManagerDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerProfile.resx">
+      <DependentUpon>ManagerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registeration.resx">
+      <DependentUpon>Registeration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerDash.resx">
+      <DependentUpon>WorkerDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerProfile.resx">
+      <DependentUpon>WorkerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerTask.resx">
+      <DependentUpon>WorkerTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="APU.xsc">
+      <DependentUpon>APU.xsd</DependentUpon>
+    </None>
+    <None Include="APU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>APU.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="APU.xss">
+      <DependentUpon>APU.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
